@@ -20,6 +20,6 @@ app.get('/movies', (req, res) => {
 
 app.use(cors());
 
-app.listen(3501, () => {
-   console.log('API listening on port 3501');
+app.listen(8001, () => {
+   console.log('API listening on port 8001');
 });
