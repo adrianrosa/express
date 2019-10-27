@@ -4,6 +4,10 @@ var service = require('./service');
 const fetch = require('node-fetch');
 var cors = require('cors');
 
+app.get('/', (req, res) => {
+  res.json("Hello world");
+});
+
 app.get('/movies', (req, res) => {
    res.json(service.getMovies());
    /*fetch('http://rockefeller.local:8081/api/installments', {
